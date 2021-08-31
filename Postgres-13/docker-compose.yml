@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres-13:
+    image: postgres:13.1
+    container_name: postgres-13
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - docker-net
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_PASSWORD=PASSWORD-POSTGRES
+
+networks:
+  docker-net:
+    external:
+      name: docker-lan
+
+volumes:
+  pg_data_13:

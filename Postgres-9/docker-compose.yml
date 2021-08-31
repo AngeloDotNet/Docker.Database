@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres-9:
+    image: postgres:9.6
+    container_name: postgres-9
+    volumes:
+      - pg_data_9:/var/lib/postgresql/data
+    networks:
+      - docker-net
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_PASSWORD=PASSWORD-POSTGRES
+
+networks:
+  docker-net:
+    external:
+      name: docker-lan
+
+volumes:
+  pg_data_9:

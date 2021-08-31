@@ -1,0 +1,22 @@
+version: '3.0'
+
+services:
+    sqlserver:
+        container_name: sqlserver
+        image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+        restart: always
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=PASSWORD-SQLSERVER
+            - MSSQL_PID=Express
+        networks:
+         - lan-network
+        volumes:
+            - /storage/sqlserver/data:/var/opt/mssql/data
+        ports:
+            - 1433:1433
+
+networks:
+   lan-network:
+      external:
+         name: docker-lan
