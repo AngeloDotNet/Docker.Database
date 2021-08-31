@@ -1,4 +1,4 @@
-# Docker
+# Docker Database
 There are currently the following templates:
 
 ## Database
