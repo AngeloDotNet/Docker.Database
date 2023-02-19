@@ -7,6 +7,8 @@ There are currently the following templates:
 - Postgres 9.6
 - Postgres 13.1
 
+If you like this repository, please drop a ⭐ on Github!
+
 ## Network configuration
 The docker-lan network (bridge type) was created with the command: 
 
