@@ -3,6 +3,8 @@ There are currently the following templates:
 
 ## Database
 - SQL Server 2017 Express
+- SQL Server 2019 Express
+- SQL Server 2022 Express
 - MySQL Server 5.7
 - Postgres 9.6
 - Postgres 13.1
