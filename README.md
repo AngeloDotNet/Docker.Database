@@ -6,6 +6,9 @@ There are currently the following templates:
 - SQL Server 2019 Express
 - SQL Server 2022 Express
 - MySQL Server 5.7
+- MySQL Server 5.7.42
+- MySQL Server 8.0
+- MySQL Server 8.0.34
 - Postgres 9.6
 - Postgres 13.1
 
