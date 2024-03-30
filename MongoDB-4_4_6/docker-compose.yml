@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  mongo:
+    container_name: mongodb-lan
+    build: .
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: PASSWORD-MONGODB
+    volumes:
+      - /docker-storage/storage-mongodb/data:/data/db
+      - /docker-storage/storage-mongodb/config:/data/configdb
+    ports:
+      - 27017:27017
+    networks:
+      - lan-network
+
+networks:
+  lan-network:
+    external:
+      name: docker-lan
