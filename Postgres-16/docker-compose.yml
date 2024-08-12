@@ -1,11 +1,11 @@
 version: '3.7'
 
 services:
-  postgres-13:
-    image: postgres:13.1
-    container_name: postgres-13
+  postgres-16:
+    image: postgres:16
+    container_name: postgres-16
     volumes:
-      - /docker/storage/storage-postgres-13:/var/lib/postgresql/data
+      - /docker/storage/storage-postgres-16:/var/lib/postgresql/data
     networks:
       - docker-net
     ports:
