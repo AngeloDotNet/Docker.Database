@@ -11,6 +11,7 @@ There are currently the following templates:
 - MySQL Server 8.0.34
 - Postgres 9.6
 - Postgres 13.1
+- Postgres 16
 
 If you like this repository, please drop a ⭐ on Github!
 
