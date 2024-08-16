@@ -12,6 +12,7 @@ There are currently the following templates:
 - Postgres 9.6
 - Postgres 13.1
 - Postgres 16
+- Postgres 16 with Postgres Web Admin
 
 If you like this repository, please drop a ⭐ on Github!
 
@@ -19,6 +20,11 @@ If you like this repository, please drop a ⭐ on Github!
 The docker-lan network (bridge type) was created with the command: 
 
 > docker network create --driver=bridge --subnet=192.168.100.0/24 docker-lan
+
+### Postgres Web Admin
+Before starting the postgres admin docker (the configuration is located in the Postgres-16_PostgresAdmin folder), you need to run this command:
+
+chown -R 5050:5050 /docker/storage/storage-postgres-adm/
 
 ### For Postgres 13.1 database (For Kong) 
 It is recommended to change the USERNAME, PASSWORD and DATABASE NAME
