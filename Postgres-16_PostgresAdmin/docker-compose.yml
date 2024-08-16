@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  postgres-16:
+    image: postgres:16
+    container_name: postgres-16
+    restart: "always"
+    volumes:
+      - /docker/storage/storage-postgres-16:/var/lib/postgresql/data
+    networks:
+      - docker-net
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_PASSWORD=PASSWORD-POSTGRES
+
+  postgres-admin:
+    image: dpage/pgadmin4:8.10
+    container_name: postgres-admin
+    restart: "always"
+    volumes:
+      - /docker/storage/storage-postgres-adm:/var/lib/pgadmin
+    networks:
+      - docker-net
+    ports:
+      - 80:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=CHANGE-ME
+      - PGADMIN_DEFAULT_PASSWORD=CHANGE-ME
+
+networks:
+  docker-net:
+    external:
+      name: docker-lan
