@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  mongo:
-    container_name: mongodb-lan
+  mongodb:
+    container_name: mongodb
     build: .
     restart: always
     environment:
