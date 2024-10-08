@@ -1,21 +1,21 @@
 version: '3.7'
 
 services:
-   mysql:
-      image: mysql:5.7
-      container_name: mysql
-      restart: always
-      environment:
-        MYSQL_ROOT_PASSWORD: PASSWORD-MYSQL
-      ports:
-        - 3306:3306
-      networks:
-         - lan-network
-      volumes:
-        - /storage/mysql:/var/lib/mysql
-        - /storage/mysql/resources/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+  mysql:
+    container_name: mysql
+    build: .
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: PASSWORD-MYSQL
+    ports:
+      - 3306:3306
+    networks:
+      - lan-network
+    volumes:
+      - /storage/mysql:/var/lib/mysql
+      - /storage/mysql/resources/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
 
 networks:
-   lan-network:
-      external:
-         name: docker-lan
+  lan-network:
+    external:
+      name: docker-lan
