@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   mysql:
-    image: mysql:8.0
     container_name: mysql
+    build: .
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: PASSWORD-MYSQL #without special symbols
