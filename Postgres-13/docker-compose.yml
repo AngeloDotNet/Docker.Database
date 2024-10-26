@@ -2,8 +2,9 @@ version: '3.7'
 
 services:
   postgres-13:
-    image: postgres:13.1
     container_name: postgres-13
+    build: .
+    restart: always
     volumes:
       - /docker/storage/storage-postgres-13:/var/lib/postgresql/data
     networks:
