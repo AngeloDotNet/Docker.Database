@@ -2,10 +2,11 @@ version: '3.7'
 
 services:
   postgres-9:
-    image: postgres:9.6
     container_name: postgres-9
+    build: .
+    restart: always
     volumes:
-      - pg_data_9:/var/lib/postgresql/data
+      - /docker/storage/storage-postgres-9:/var/lib/postgresql/data
     networks:
       - docker-net
     ports:
@@ -17,6 +18,3 @@ networks:
   docker-net:
     external:
       name: docker-lan
-
-volumes:
-  pg_data_9:
