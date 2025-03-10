@@ -4,7 +4,7 @@ There are currently the following templates:
 
 ## Database
 
-- MongoDB 8.0.4
+- MongoDB 8.0.5
 - SQL Server 2017 Express
 - SQL Server 2019 Express
 - SQL Server 2022 Express
