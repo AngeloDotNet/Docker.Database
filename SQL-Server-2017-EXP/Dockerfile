@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+FROM mcr.microsoft.com/mssql/server:2017-GA-ubuntu
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
