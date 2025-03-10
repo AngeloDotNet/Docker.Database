@@ -1,5 +1,5 @@
-FROM mongo:8.0.4
-#FROM mongo:7.0.12
+FROM mongo:8.0.5
+#FROM mongo:8.0.4
 
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt -y install tzdata
