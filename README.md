@@ -4,24 +4,24 @@ There are currently the following templates:
 
 ## Database
 
-- MongoDB 8.0.5
+- MongoDB 8.0.11 (Updated)
 - SQL Server 2017 Express
-- SQL Server 2019 Express
-- SQL Server 2022 Express
+- SQL Server 2019 Express (Updated)
+- SQL Server 2022 Express (Updated)
 - MySQL Server 5.7
-- MySQL Server 5.7.42
+- MySQL Server 5.7.44 (Updated)
 - MySQL Server 8.0
-- MySQL Server 8.0.34
+- MySQL Server 8.4.5 (Updated)
+- MySQL Server 9.4.0
 - Postgres 9.6
-- Postgres 13.1
+- Postgres 13.21 (Updated)
 - Postgres 16
-- Postgres 16 Web Admin
 
 If you like this repository, please drop a ⭐ on Github!
 
 ## Network configuration
 
-The docker-lan network (bridge type) was created with the command: 
+The docker-lan network (bridge type) was created with the command:
 
 > docker network create --driver=bridge --subnet=192.168.100.0/24 docker-lan
 
