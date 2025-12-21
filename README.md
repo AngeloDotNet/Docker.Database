@@ -4,17 +4,18 @@ There are currently the following templates:
 
 ## Database
 
-- MongoDB 8.0.11 (Updated)
-- SQL Server 2017 Express
+- MongoDB 8.2.3 (Updated)
+- SQL Server 2017 Express (Updated)
 - SQL Server 2019 Express (Updated)
 - SQL Server 2022 Express (Updated)
 - MySQL Server 5.7
-- MySQL Server 5.7.44 (Updated)
+- MySQL Server 5.7.44
 - MySQL Server 8.0
-- MySQL Server 8.4.5 (Updated)
+- MySQL Server 8.4.5
 - MySQL Server 9.4.0
+- MySQL Server 9.5.0 (New)
 - Postgres 9.6
-- Postgres 13.21 (Updated)
+- Postgres 13.21
 - Postgres 16
 
 If you like this repository, please drop a ⭐ on Github!
@@ -31,14 +32,14 @@ Before starting the postgres admin docker (the configuration is located in the P
 
 chown -R 5050:5050 /docker/storage/storage-postgres-adm/
 
-### For Postgres 13.1 database (For Kong)
+### For Postgres 13.x database (For Kong)
 
 It is recommended to change the USERNAME, PASSWORD and DATABASE NAME
 
 > CREATE USER user_kong WITH PASSWORD 'pass_kong1!';
 > CREATE DATABASE db_kong OWNER user_kong;
 
-### For Postgres 9.6 database (For Konga)
+### For Postgres 9.x database (For Konga)
 
 It is recommended to change the USERNAME, PASSWORD and DATABASE NAME
 
