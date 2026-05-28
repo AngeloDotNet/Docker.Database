@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  mysql:
+    container_name: mysql
+    build: .
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: PASSWORD-MYSQL #without special symbols
+    ports:
+      - 3306:3306
+    networks:
+      - lan-network
+    volumes:
+       - /storage/mysql:/var/lib/mysql
+                  
+networks:
+  lan-network:
+    external:
+      name: docker-lan
