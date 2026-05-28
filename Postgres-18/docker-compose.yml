@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  postgres-16:
+    container_name: postgres-18
+    build: .
+    restart: always
+    volumes:
+      - /docker/storage/storage-postgres-18:/var/lib/postgresql/data
+    networks:
+      - docker-net
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=PASSWORD-POSTGRES
+
+networks:
+  docker-net:
+    external:
+      name: docker-lan
