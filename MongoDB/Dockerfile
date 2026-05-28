@@ -1,4 +1,5 @@
-FROM mongo:8.2.3
+FROM mongo:8.2.6
+#FROM mongo:8.2.3
 #FROM mongo:8.0.11
 
 RUN export DEBIAN_FRONTEND=noninteractive
