@@ -4,19 +4,10 @@ There are currently the following templates:
 
 ## Database
 
-- MongoDB 8.2.3 (Updated)
-- SQL Server 2017 Express (Updated)
-- SQL Server 2019 Express (Updated)
-- SQL Server 2022 Express (Updated)
-- MySQL Server 5.7
-- MySQL Server 5.7.44
-- MySQL Server 8.0
-- MySQL Server 8.4.5
-- MySQL Server 9.4.0
-- MySQL Server 9.5.0 (New)
-- Postgres 9.6
-- Postgres 13.21
-- Postgres 16
+- MongoDB
+- SQL Server Express Edition
+- MySQL Server Edition
+- Postgres Edition
 
 If you like this repository, please drop a ⭐ on Github!
 
